@@ -19,5 +19,10 @@ app.use('/list', listController);
 const userController = require('./controllers/user.js');
 app.use('/user', userController);
 
+//Test
+app.get('/', (req, res) => {
+    res.send('test');
+})
+
 //Listen
 app.listen(port, () => console.log('listening'));
